@@ -1,0 +1,42 @@
+
+body {
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body > p {
+    text-align: center;
+}
+
+main {
+    display: contents;
+}
+
+article {
+    /* max-width: 800px; */
+
+    display: grid;
+    
+    grid-template-columns:250px 250px 120px;
+    grid-template-rows:repeat(infinite,90px);
+    gap: .5rem;
+    align-content: center;
+    justify-content: center;
+}
+
+button {
+    cursor: pointer;
+    height: 40px;
+    border:none;
+    background-color: rgb(255, 18, 18);
+}
+.addButton {
+    background-color: #33b249;
+}
+
+
+@media (max-width: 660px) {
+article {
+    grid-template-columns: 2fr 2fr 1.2fr;
+}
+  }
